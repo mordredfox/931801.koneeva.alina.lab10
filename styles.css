@@ -1,0 +1,140 @@
+*{
+	margin:0;
+}
+body{
+	background-color:black;
+}
+
+#lamp img{
+	height:250px;
+}
+#wizard img{
+	height:280px;
+}
+#hat img{
+	height:130px;
+	width:220px;
+}
+#bunny img{
+	height:70px;
+}
+#bird img{
+	height:70px;
+}
+#wizard{
+	position:absolute;
+	bottom:100px;
+	left:500px;
+	opacity:0;
+	animation-duration:0.1s;
+}
+#hat{
+	position:absolute;
+	bottom:150px;
+	right:570px;
+	opacity:0;
+	animation-duration:0.1s;
+}
+#bunny{
+	position:absolute;
+	bottom:290px;
+	right:651px;
+	opacity:0;
+	animation-duration:0.1s;
+}
+#bird{
+	position:absolute;
+	bottom:190px;
+	right:648px;
+	opacity:0;
+	animation-duration:0.1s;
+}
+@keyframes focus{
+	from{
+		bottom:290px;
+	}
+	to{
+		bottom:190px;
+	}
+	
+}
+@keyframes pocus{
+	from{
+		bottom:190px;
+	}
+	to{
+		bottom:290px;
+	}
+	
+}
+#light{
+	border-bottom: 650px solid yellow;
+	border-left: 400px solid transparent;
+	border-right: 400px solid transparent;
+	width: 75px;
+	height: 0;
+	position: absolute;
+	top:56px;
+	left:330px;
+	right: auto;
+	opacity:0;
+	animation-duration:0.2s;
+}
+
+#lamp{
+	width:100%;
+	height:300px;
+	text-align:center;
+}
+@keyframes lightOn{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:0.5;
+	}
+	
+}
+@keyframes lightOff{
+	
+	from{
+		opacity:0.5;
+	}
+	to{
+		opacity:0;
+	}
+	
+}
+#curtain{
+	background-image:url(1.jpg);
+	background-size:cover;
+	background-position:center 100%;
+	background-repeat:no-repeat;
+	transition:background-position 0.2s linear;
+	width:100%;
+	height:100vh;
+	animation-duration:1s;
+	animation-iteration-count: 1;
+	position:absolute;
+	left:0;
+	top:0;
+}
+#curtain:hover{
+	background-position:center 110%;
+}
+@keyframes curtainUp{
+	from{
+		background-position:center 100%;
+	}
+	to{
+		background-position:center 1000%;
+	}
+}
+#cliker{
+	position:absolute;
+	bottom:290px;
+	right:648px;
+	width:100px;
+	height:100px;
+	opacity:0;
+}
